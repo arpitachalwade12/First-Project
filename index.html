@@ -3,84 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arpita Portfoilo</title>
+    <title>Glow Beauty | Homepage</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      header {
+        background: #e91e63;
+        color: white;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        margin: 15px;
+        text-decoration: none;
+      }
+      section {
+        padding: 40px;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
 
-    <h1>HELLO, WELCOME TO MY WEB PAGE...</h1>
-    <h2>This is a h2 tag</h2>
-    <h3>This is a h3 tag</h3>
-    <h4>This is a h4 tag</h4>
-    <h5>This is a h5 tag</h5>
-    <h6>This is a h6 tag</h6>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 30px;
+      }
+
+      .video-box {
+        flex: 1;
+      }
+
+      .video-box video {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+
+      .about-box {
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
-    <p>Unordered List</p>
+    <header>
+      <h1 style="text-align: center">Efsun Cosmetics</h1>
 
-    <ul>
-      <li>Falooda</li>
-      <li>Ice Cream</li>
-    </ul>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <br />
-    <p>Ordered List</p>
-    <ol>
-      <li>Pani Puri</li>
-      <li>Chat puri</li>
-    </ol>
+    <section class="container">
+      <!-- Left side: Video -->
+      <div class="video-box">
+        <video autoplay muted loop>
+          <source src="https://www.pexels.com/download/video/3971844/" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-    <br />
-    <p>Description List</p>
-    <dl>
-      <dt>LAN</dt>
-      <dd>Local Arean Networlk</dd>
-      <dt>WAN</dt>
-      <dd>Wide Area Network</dd>
-    </dl>
+      <!-- Right side: About -->
+      <div class="about-box">
+        <h2>About Efsun Cosmetics</h2>
+        <br />
+        <p>
+          <b>Efsun Natural Cosmetics</b> is a brand and ecommerce platform
+          focused on natural personal care and cosmetic products formulated with
+          plant-based and botanical ingredients. <br />The official site
+          functions as both a brand storefront and an online shop where visitors
+          can browse and purchase products for
+          <b
+            >skin, hair, and body care, including natural oils, tonics, creams,
+            sunscreens, foot care salts, and aromatherapy items</b
+          >skin, hair, and body care, including natural oils, tonics, creams,
+          sunscreens, foot care salts, and aromatherapy items derived from
+          ingredients like <b>jojoba, castor, rose, and herbal extracts</b>.
+          <br />The site emphasizes clean, natural formulations, sustainability,
+          and products that enhance daily beauty and wellness routines without
+          harsh synthetic additives.
+        </p>
+      </div>
+    </section>
+    <h1>Offers</h1>
 
-    <br />
-    <br />
-    <p>
-      Hii Everyone, I'm Arpita from Solapur, Maharashtra. A Student of Computer
-      Science & Engineering with specialization Artificial Intelligence & Data
-      Science. I will tell you the Essential programming Languages which are
-      widely used in this era.
-    </p>
-
-    <p>
-      <u>Following is the Programming Languages</u>
-    </p>
-
-    <img src="Java.png" alt="Image" height="250" />
-
-    <p><u>Contact us</u></p>
-    <a href="tel: 7058753737"> Mobile Number </a>
-    <br />
-    <a href="mailto: arpitachalwade04@gmail.com"> Mail</a>
-    <br />
-    <a
-      href="https://www.linkedin.com/in/arpita-chalwade-b890b9301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      target="_blank"
-    >
-      Linkedin
-    </a>
-    <br />
-    <br />
-    <video
-      src="https://www.pexels.com/download/video/6436164/"
-      height="400"
-      muted
-      controls
-    >
-      Nature Video
-    </video>
+    <!--<div class="video-box" style= .video-box {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+      }>
+      
+    </div>-->
 
     <br />
+
+    <div class="image-row">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGEx0NzRpyqmz4w-moKeUxRM18QetwMxXHw&s"
+        alt="Cosmetics 1"
+      />
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Cosmetics 2"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLfZbdLIYu6a57W8xYChY132vgPTmRXrq5rw&s"
+        alt="Cosmetics 3"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ942mHfyCOMAarj8R5fQNa2n6fEq5KZiUF0w&s"
+        alt="Cosmetics 4"
+      />
+    </div>
+
+    <style>
+      .image-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .image-row img {
+        width: 23%;
+        height: auto;
+      }
+    </style>
+
     <br />
-    <audio
-      controls
-      src="mixkit-cinematic-whoosh-fast-transition-1492.wav"
-      type="wav"
-    >
-      Audio of Transition
-    </audio>
+
+    <h2>Hurry Up...! Now</h2>
   </body>
 </html>
